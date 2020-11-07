@@ -1,0 +1,28 @@
+{
+    "name": "adrianoalves/google-geolocation",
+    "description": "Simple, resource saver, framework-agnostic, lightweight and vanilla PHP geolocation service using Google Geo API",
+    "keywords": [ "google", "geolocation", "distance matrix", "php", "php 7", "php7", "google geolocation api" ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "authors": [
+        {
+            "name": "Adriano Alves",
+            "email": "tohdi1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "GeoLocation\\" : "src"
+        },
+        "classmap": [
+            "src/"
+        ]
+    }
+}
