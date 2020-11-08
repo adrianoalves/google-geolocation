@@ -1,7 +1,7 @@
 # google-geolocation
 ##### Resource saving, lightweight, framework-agnostic google geo location services in vanilla PHP
 
-### What it Does
+### What we can do
 
 1. **Get Latitude and Longitude Coordinates of a Human readable Address with GeoCoder;**
 
@@ -15,8 +15,8 @@ To learn more [visit the official google documentation.](https://developers.goog
 - Using the Geocoder
 ```php
 // a simplest example
-require 'vendor/autoload.php';
 $geoCoder = new \Geolocation\GeoCoder\GeoCoder( 'yoUr-aPiKey-hEre' );
+// getting the latitude and longitude of an address
 $result = $geoCoder->request( 'Praça da Sé, São Paulo, SP' );
 var_dump( $result );
 ```
@@ -24,8 +24,9 @@ var_dump( $result );
 - Using the Distance Matrix
 ```php
 // same simplest example here
-require 'vendor/autoload.php';
 $distanceMatrix = new \Geolocation\DistanceMatrix\DistanceMatrix( 'yoUr-aPiKey-hEre' );
+// getting the distance in metrics and the time in seconds from an address to another
 $result = $distanceMatrix->request( ['Praça da Sé, São Paulo, SP'], ['Avenida Paulista, 1, São Paulo, SP'] );
 var_dump( $result );
 ```
+I appreciate any suggestions, critics, comments and bug report, so please let me know.
