@@ -9,6 +9,13 @@
 
 ### Get it started
 
+#### How to install
+
+You can clone this repository or use composer to install this package:
+```shell script
+composer require adrianoalves/google-geolocation
+```
+
 Prior to use this package, you need an api key, register as a google developer, create a project with a billing account and generate your api key. 
 To learn more [visit the official google documentation.](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
@@ -29,4 +36,6 @@ $distanceMatrix = new \Geolocation\DistanceMatrix\DistanceMatrix( 'yoUr-aPiKey-h
 $result = $distanceMatrix->request( ['Praça da Sé, São Paulo, SP'], ['Avenida Paulista, 1, São Paulo, SP'] );
 var_dump( $result );
 ```
-I appreciate any suggestions, critics, comments and bug report, so please let me know.
+There is a examples directory where you can learn more about how to use it easily.
+
+_I appreciate any suggestions, critics, comments and bug report, so please let me know._
