@@ -123,6 +123,7 @@ class DistanceMatrix implements GeolocationService
     }
 
     /**
+     * Add addresses to the origins and destinations parameters
      * @param array $addresses the addresses formatted according to the distance matrix documentation
      * @param string $type 'origins' or 'destinations', defaults to 'origins'
      * @return DistanceMatrix the object itself
@@ -143,8 +144,9 @@ class DistanceMatrix implements GeolocationService
 
     /**
      * helper method to deal with an array of addresses
-     * @param array $addresses addresses that wil be split by pipe "|"
-     * @return string
+     * @param array $addresses addresses that will be split by pipe "|" according to the api documentation
+     * @return string the addresses separated by | if more than one address is provided
+     * @see https://developers.google.com/maps/documentation/distance-matrix/overview#required-parameters
      */
     public function convertAddresses( array $addresses ): string
     {
